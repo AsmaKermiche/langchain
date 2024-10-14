@@ -46,7 +46,7 @@ class OntotextGraphDBQAChain(Chain):
     input_key: str = "query"  #: :meta private:
     output_key: str = "result"  #: :meta private:
 
-    allow_dangerous_requests: bool = False
+    allow_dangerous_requests: bool = True
     """Forced user opt-in to acknowledge that the chain can make dangerous requests.
 
     *Security note*: Make sure that the database connection uses credentials
